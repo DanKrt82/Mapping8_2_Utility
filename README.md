@@ -1,6 +1,6 @@
 # Tiff utility developed in C# to translate 8bpp tiff to 2bpp using thresholds. 
 
-![version](https://img.shields.io/badge/version-0.1.0.1-blue)
+![version](https://img.shields.io/badge/version-1.0.0.1-blue)
 
 The project provides a solution for managing the printing dynamics of a high-performance industrial inkjet printer.
 
