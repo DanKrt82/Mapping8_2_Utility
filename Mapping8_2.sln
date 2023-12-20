@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapping8_2", "Mapping8_2\Mapping8_2.csproj", "{FA830EFF-5CC0-427E-A30A-15C7A1DCAF0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA830EFF-5CC0-427E-A30A-15C7A1DCAF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA830EFF-5CC0-427E-A30A-15C7A1DCAF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA830EFF-5CC0-427E-A30A-15C7A1DCAF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA830EFF-5CC0-427E-A30A-15C7A1DCAF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64E2DBC8-40E5-422E-8D57-C6A9D640848B}
+	EndGlobalSection
+EndGlobal
