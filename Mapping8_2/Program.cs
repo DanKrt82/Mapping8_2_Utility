@@ -131,15 +131,15 @@ internal class Program
         return (byte)(byte_value_1 << 6 | byte_value_2 << 4 | byte_value_3 << 2 | byte_value_4);
     }
 
-    private static byte MapValue(byte value, int s_1, int s_2, int s_3)
+    private static byte MapValue(byte value, int threshold_1, int threshold_2, int threshold_3)
     {
         if (value == 0)
             return 0;
-        else if (value > s_1 && value <= s_2)
+        else if (value > threshold_1 && value <= threshold_2)
             return 1; // 01 in bits
-        else if (value > s_2 && value <= s_3)
+        else if (value > threshold_2 && value <= threshold_3)
             return 2; // 10 in bits
-        else if (value > s_3 && value <= 255)
+        else if (value > threshold_3 && value <= 255)
             return 3; // 11 in bits
         else
             throw new ArgumentException("Invalid value");
@@ -166,10 +166,12 @@ internal class Program
         var scanLineSize = inputTiff.ScanlineSize();
         int newscanLineSize = (scanLineSize + 3) / 4; // Arrotonda per eccesso per includere tutti i pixel
 
+        // Original image buffer
         var originalBuffer = new byte[height][];
 
+        // Compressed image buffer
         var compressedBuffer = new byte[height][];
-        // Buffer per l'immagine compressa
+        
 
         // Read the image into a buffer for each line.
         for (int i = 0; i < height; i++)
