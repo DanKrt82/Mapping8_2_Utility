@@ -188,7 +188,7 @@ internal class Program
         outputTiff.SetField(TiffTag.YRESOLUTION, yRes);
         outputTiff.SetField(TiffTag.ROWSPERSTRIP, height);
         outputTiff.SetField(TiffTag.COMPRESSION, Compression.NONE);
-        outputTiff.SetField(TiffTag.PHOTOMETRIC, Photometric.MINISBLACK);
+        outputTiff.SetField(TiffTag.PHOTOMETRIC, Photometric.MINISWHITE);
         outputTiff.SetField(TiffTag.FILLORDER, FillOrder.MSB2LSB);
         outputTiff.SetField(TiffTag.PLANARCONFIG, PlanarConfig.CONTIG);
 
